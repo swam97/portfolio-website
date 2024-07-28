@@ -44,9 +44,9 @@ const Projects = () => (
             <h2>2022</h2>
             <br></br>
             <ImageContainer>
-                <Image src={`${process.env.PUBLIC_URL}/uobciti.png`} alt="TAP" width={300} height={200} />
+                <Image src="/images/uobciti.png" alt="TAP" width={300} height={200} />
 
-                <Image src={`${process.env.PUBLIC_URL}/ub.jpg`} alt="MANTAP" width={300} height={200} />
+                <Image src="/images/ub.jpg" alt="MANTAP" width={300} height={200} />
             </ImageContainer>
             <br></br>
             <li>Constellation Project UOB - Citibank (Project Team)</li>
