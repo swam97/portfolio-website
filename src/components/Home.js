@@ -20,7 +20,7 @@ const Home = () => {
         <Section>
             {/* <Title>Welcome to My Portfolio</Title> */}
             <ProfileImageContainer>
-                <Image src={`${process.env.PUBLIC_URL}/am.jpeg`} alt="Profile Picture" width={200} height={200} />
+                <Image src="/images/am.jpeg" alt="Profile Picture" width={200} height={200} />
             </ProfileImageContainer>
             {/* <Typist key={key} cursor={{ show: true, blink: true, element: '|' }}> */}
             <TypingEffect text={text} cursor={{ show: true, blink: true, element: '|' }}>
