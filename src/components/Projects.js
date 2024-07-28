@@ -14,9 +14,9 @@ const Projects = () => (
             <h2>2024 - Current</h2>
             <br></br>
             <ImageContainer>
-                <Image src="/tap.png" alt="TAP" width={300} height={200} />
+                <Image src={`${process.env.PUBLIC_URL}/tap.png`} alt="TAP" width={300} height={200} />
 
-                <Image src="/mantap.png" alt="MANTAP" width={300} height={200} />
+                <Image src={`${process.env.PUBLIC_URL}/mantap.png`} alt="MANTAP" width={300} height={200} />
             </ImageContainer>
             <br></br>
             <li>Tabung Amanah Pekerja Brunei, DSP Digital Development (Tech Team Lead)</li>
@@ -25,7 +25,7 @@ const Projects = () => (
             <h2>2023 - 2024</h2>
             <br></br>
             <ImageContainer>
-                <Image src="/sme.jpeg" alt="TAP" width={300} height={200} />
+                <Image src={`${process.env.PUBLIC_URL}/sme.jpeg`} alt="TAP" width={300} height={200} />
             </ImageContainer>
             <br></br>
             <li>SME Bank Thailand, DSP Digital Development (Assistant Team Lead)</li>
@@ -33,9 +33,9 @@ const Projects = () => (
             <h2>2023</h2>
             <br></br>
             <ImageContainer>
-                <Image src="/bibd.jpeg" alt="TAP" width={300} height={200} />
+                <Image src={`${process.env.PUBLIC_URL}/bibd.jpeg`} alt="TAP" width={300} height={200} />
 
-                <Image src="/lhb.jpeg" alt="MANTAP" width={300} height={200} />
+                <Image src={`${process.env.PUBLIC_URL}/lhb.jpeg`} alt="MANTAP" width={300} height={200} />
             </ImageContainer>
             <br></br>
             <li>Land and Houses Bank Thailand, DSP Digital Development (Assistant Team Lead)</li>
@@ -44,9 +44,9 @@ const Projects = () => (
             <h2>2022</h2>
             <br></br>
             <ImageContainer>
-                <Image src="/uobciti.png" alt="TAP" width={300} height={200} />
+                <Image src={`${process.env.PUBLIC_URL}/uobciti.png`} alt="TAP" width={300} height={200} />
 
-                <Image src="/ub.jpg" alt="MANTAP" width={300} height={200} />
+                <Image src={`${process.env.PUBLIC_URL}/ub.jpg`} alt="MANTAP" width={300} height={200} />
             </ImageContainer>
             <br></br>
             <li>Constellation Project UOB - Citibank (Project Team)</li>
