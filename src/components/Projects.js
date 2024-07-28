@@ -14,9 +14,9 @@ const Projects = () => (
             <h2>2024 - Current</h2>
             <br></br>
             <ImageContainer>
-                <Image src="/tap.png" alt="TAP" width={300} height={200} />
+                <Image src="/images/tap.png" alt="TAP" width={300} height={200} />
 
-                <Image src="/mantap.png" alt="MANTAP" width={300} height={200} />
+                <Image src="/images/mantap.png" alt="MANTAP" width={300} height={200} />
             </ImageContainer>
             <br></br>
             <li>Tabung Amanah Pekerja Brunei, DSP Digital Development (Tech Team Lead)</li>
@@ -25,7 +25,7 @@ const Projects = () => (
             <h2>2023 - 2024</h2>
             <br></br>
             <ImageContainer>
-                <Image src="/sme.jpeg" alt="TAP" width={300} height={200} />
+                <Image src="/images/sme.jpeg" alt="TAP" width={300} height={200} />
             </ImageContainer>
             <br></br>
             <li>SME Bank Thailand, DSP Digital Development (Assistant Team Lead)</li>
@@ -33,9 +33,9 @@ const Projects = () => (
             <h2>2023</h2>
             <br></br>
             <ImageContainer>
-                <Image src="/bibd.jpeg" alt="TAP" width={300} height={200} />
+                <Image src="/images/bibd.jpeg" alt="TAP" width={300} height={200} />
 
-                <Image src="/lhb.jpeg" alt="MANTAP" width={300} height={200} />
+                <Image src="/images/lhb.jpeg" alt="MANTAP" width={300} height={200} />
             </ImageContainer>
             <br></br>
             <li>Land and Houses Bank Thailand, DSP Digital Development (Assistant Team Lead)</li>
