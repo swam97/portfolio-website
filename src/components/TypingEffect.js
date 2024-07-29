@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Spantext } from '../styles';
 
 const TypingEffect = ({ text, speed = 50, delay = 1000 }) => {
     const [displayedText, setDisplayedText] = useState('');
@@ -23,7 +24,7 @@ const TypingEffect = ({ text, speed = 50, delay = 1000 }) => {
         }
     }, [typing, index, text, speed, delay]);
 
-    return <span>{displayedText}</span>;
+    return <Spantext>{displayedText}</Spantext>;
 };
 
 export default TypingEffect;

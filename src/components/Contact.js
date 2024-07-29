@@ -1,9 +1,9 @@
 // components/Contact.js
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
-import { Section, Title, FormField, FormButton, ErrorText } from '../styles';
+import { Section, Title, FormField, FormButton, ErrorText, Form } from '../styles';
 
 const Contact = () => {
     const sendEmail = (values, { setSubmitting, resetForm }) => {
@@ -26,6 +26,7 @@ const Contact = () => {
     return (
         <Section>
             <Title>Contact Me</Title>
+            <br></br><br></br>
             <Formik
                 initialValues={{ name: '', email: '', message: '' }}
                 validationSchema={Yup.object({
@@ -37,6 +38,7 @@ const Contact = () => {
                     sendEmail(values, actions);
                 }}
             >
+                
                 <Form>
                     <FormField>
                         <label htmlFor="name">Name</label>
@@ -55,7 +57,10 @@ const Contact = () => {
                     </FormField>
                     <FormButton type="submit">Submit</FormButton>
                 </Form>
+              
+             
             </Formik>
+            
         </Section>
     );
 };

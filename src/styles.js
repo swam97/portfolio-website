@@ -23,6 +23,15 @@ export const Text = styled.p`
     font-size: 1em;
   }
 `;
+export const Spantext = styled.span`
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
+`;
 
 export const ImageContainer = styled.div`
   display: grid;
@@ -76,7 +85,12 @@ export const ProjectYear = styled.h2`
 // `;
 
 export const ProfileImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:150px;
   margin-bottom: 20px;
+
   img {
     border-radius: 50%;
   }
@@ -86,24 +100,87 @@ export const ProfileImageContainer = styled.div`
 // justify-content: center;
 // gap: 20px;
 // `;
+
+export const SkillContainer = styled.div`
+ display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the items horizontally */
+  justify-content: center; /* Center align the items vertically */
+  max-width: 66.67%; /* Maximum width of two-thirds of the screen */
+  width: 100%; /* Full width up to the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Optional: add padding if needed */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  // min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+  @media (max-width: 768px) {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+`;
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width of its container */
+  margin: 0 auto; /* Center horizontally */
+  
+  max-width: 60%;
+`;
+
+export const AboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the items horizontally */
+  justify-content: center; /* Center align the items vertically */
+  max-width: 66.67%; /* Maximum width of two-thirds of the screen */
+  width: 100%; /* Full width up to the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Optional: add padding if needed */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  // min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+  @media (max-width: 768px) {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+`;
+export const AboutText = styled.h1`
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  text-align: left; /* Left justify the text */
+  width: 100%; /* Make sure the width takes the whole container width */
+  font-weight: normal; /* Set font weight to normal */
+`;
+
 export const SkillText = styled.h1`
   font-size: 2.0rem;
   color: #333;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: left; /* Left justify the text */
+  width: 100%; /* Make sure the width takes the whole container width */
 `;
-
-
-// export const Title = styled.h1`
-//   font-size: 2.5rem;
-//   color: #333;
-//   margin-bottom: 20px;
-// `;
-
-// export const Text = styled.p`
-//   font-size: 1.2rem;
-//   color: #666;
-// `;
+export const EduText = styled.h1`
+  margin-top: 50px;
+  font-size: 2.0rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left; /* Left justify the text */
+  width: 100%; /* Make sure the width takes the whole container width */
+  text-decoration: underline;
+`;
+export const EduTitleText = styled.h1`
+  margin-top: 30px;
+  font-size: 2.0rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left; /* Left justify the text */
+  width: 100%; /* Make sure the width takes the whole container width */
+`;
+export const PlaceText = styled.h1`
+  margin-top: 1px;
+  font-size: 2.0rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left; /* Left justify the text */
+  width: 100%; /* Make sure the width takes the whole container width */
+  font-weight: normal;
+`;
 
 export const NavbarContainer = styled.nav`
   display: flex;
@@ -149,14 +226,17 @@ export const FormField = styled.div`
 `;
 
 export const FormButton = styled.button`
-  padding: 10px 20px;
+// display: block;
+  padding: 20px 20px;
   font-size: 1rem;
   color: #fff;
   background: #333;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-
+  max-width: 60%;
+  margin: 0 auto;
+  min-width: 300px;
   &:hover {
     background: #444;
   }

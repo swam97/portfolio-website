@@ -1,10 +1,11 @@
 import React from 'react';
-import { Section, Title, Text, SkillText } from '../styles';
+import { Section, Title, Text, SkillText,SkillContainer } from '../styles';
 
 
 const Skills = () => (
     <Section>
         <Title>My Skills</Title>
+        <br></br>
         <Text>
             Here are some of the skills I possess:
         </Text>
@@ -12,15 +13,13 @@ const Skills = () => (
         <br></br>
         
             
-            <SkillText>1. Programming </SkillText>
-            <br></br>
-            <SkillText>2. Problem Solving and Analytical Thinking </SkillText>
-            <br></br>
-            <SkillText>3. Software Design </SkillText>
-            <br></br>
-            <SkillText>4. Software Architecture </SkillText>
-            <br></br>
-            <SkillText>5. Coaching and Training </SkillText>
+        <SkillContainer>
+      <SkillText>1. Programming</SkillText>
+      <SkillText>2. Problem Solving and Analytical Thinking</SkillText>
+      <SkillText>3. Software Design</SkillText>
+      <SkillText>4. Software Architecture</SkillText>
+      <SkillText>5. Coaching and Training</SkillText>
+    </SkillContainer>
         
     </Section>
 );
