@@ -215,7 +215,7 @@ export const FormField = styled.div`
   .inputContainer {
     display: flex;
     flex-direction: column;
-    width: 50%; /* Set the same width for the container */
+    width: 60%; /* Set the same width for the container */
   }
   label {
     
