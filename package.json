@@ -11,13 +11,14 @@
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "@babel/runtime": "^7.25.0",
     "emailjs-com": "^3.2.0",
     "formik": "^2.4.6",
     "framer-motion": "^11.2.12",
     "next": "14.2.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "styled-components": "^6.1.11",
+    "styled-components": "^6.1.12",
     "yup": "^1.4.0"
   },
   "devDependencies": {

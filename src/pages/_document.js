@@ -1,8 +1,9 @@
 // pages/_document.js
 import Document from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { Html, Head, Main, NextScript } from 'next/document';
 
-class MyDocument extends Document {
+export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
         const sheet = new ServerStyleSheet();
         const originalRenderPage = ctx.renderPage;
@@ -10,7 +11,8 @@ class MyDocument extends Document {
         try {
             ctx.renderPage = () =>
                 originalRenderPage({
-                    enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+                    enhanceApp: (App) => (props) =>
+                        sheet.collectStyles(<App {...props} />),
                 });
 
             const initialProps = await Document.getInitialProps(ctx);
@@ -27,6 +29,21 @@ class MyDocument extends Document {
             sheet.seal();
         }
     }
-}
 
-export default MyDocument;
+    render() {
+        return (
+            <Html>
+                <Head>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+                        rel="stylesheet"
+                    />
+                </Head>
+                <body>
+                    <Main />
+                    <NextScript />
+                </body>
+            </Html>
+        );
+    }
+}

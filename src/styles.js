@@ -208,14 +208,23 @@ export const FooterText = styled.p`
 
 export const FormField = styled.div`
   margin-bottom: 20px;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width of its container */
+  align-items: center;
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Set the same width for the container */
+  }
   label {
-    display: block;
+    
     margin-bottom: 5px;
     font-size: 1rem;
     color: #333;
+    
   }
-
+  
   input, textarea {
     width: 100%;
     padding: 10px;
@@ -226,7 +235,10 @@ export const FormField = styled.div`
 `;
 
 export const FormButton = styled.button`
-// display: block;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width of its container */
   padding: 20px 20px;
   font-size: 1rem;
   color: #fff;
@@ -234,9 +246,10 @@ export const FormButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  max-width: 60%;
+  max-width: 30%;
   margin: 0 auto;
-  min-width: 300px;
+  align-items: center;
+  // min-width: 300px;
   &:hover {
     background: #444;
   }

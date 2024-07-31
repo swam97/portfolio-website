@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
 
 function MyApp({ Component, pageProps }) {
   React.useEffect(() => {
-    emailjs.init('B8XdYnCiy3vIsrvz1'); // Initialize EmailJS here with your public key
+    emailjs.init('H8EJgslUK7a226R8h'); // Initialize EmailJS here with your public key
   }, []);
 
   return (

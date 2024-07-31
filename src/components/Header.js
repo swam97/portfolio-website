@@ -21,10 +21,7 @@ font-family: 'Roboto', sans-serif; /* Apply Roboto font */
 const Header = () => (
     <>
         <Head>
-            <link
-                href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-                rel="stylesheet"
-            />
+
         </Head>
         <HeaderContainer>
             <HeaderTitle>Ammar Abdul Wahid</HeaderTitle>

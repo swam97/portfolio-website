@@ -1,15 +1,15 @@
 // components/Contact.js
 import React from 'react';
-import { Formik, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
-import { Section, Title, FormField, FormButton, ErrorText, Form } from '../styles';
+import { Section, Title, FormField, FormButton, ErrorText } from '../styles';
 
 const Contact = () => {
     const sendEmail = (values, { setSubmitting, resetForm }) => {
         const serviceID = 'service_0gu52gm';
         const templateID = 'template_8tyhpo7';
-
+        console.log('Im here');
         emailjs.send(serviceID, templateID, values)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
@@ -38,29 +38,35 @@ const Contact = () => {
                     sendEmail(values, actions);
                 }}
             >
-                
+
                 <Form>
                     <FormField>
-                        <label htmlFor="name">Name</label>
-                        <Field name="name" type="text" />
-                        <ErrorMessage name="name" component={ErrorText} />
+                        <div className='inputContainer'>
+                            <label htmlFor="name">Name</label>
+                            <Field name="name" type="text" />
+                            <ErrorMessage name="name" component={ErrorText} />
+                        </div>
                     </FormField>
                     <FormField>
-                        <label htmlFor="email">Email</label>
-                        <Field name="email" type="email" />
-                        <ErrorMessage name="email" component={ErrorText} />
+                        <div className='inputContainer'>
+                            <label htmlFor="email">Email</label>
+                            <Field name="email" type="email" />
+                            <ErrorMessage name="email" component={ErrorText} />
+                        </div>
                     </FormField>
                     <FormField>
-                        <label htmlFor="message">Message</label>
-                        <Field name="message" as="textarea" rows="4" />
-                        <ErrorMessage name="message" component={ErrorText} />
+                        <div className='inputContainer'>
+                            <label htmlFor="message">Message</label>
+                            <Field name="message" as="textarea" rows="4" />
+                            <ErrorMessage name="message" component={ErrorText} />
+                        </div>
                     </FormField>
                     <FormButton type="submit">Submit</FormButton>
                 </Form>
-              
-             
+
+
             </Formik>
-            
+
         </Section>
     );
 };
