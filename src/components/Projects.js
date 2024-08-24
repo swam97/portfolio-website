@@ -60,7 +60,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Section, Title, Text, ImageContainer, ProjectList, ProjectItem, ProjectYear } from '../styles';
+import { Section, Title, Text, ImageContainer, ProjectList, ProjectItem, ProjectItem2, ProjectYear } from '../styles';
 
 const Projects = () => (
   <Section>
@@ -102,7 +102,7 @@ const Projects = () => (
         <Image src="/images/ub.jpg" alt="MANTAP" width={300} height={200} />
       </ImageContainer>
       <ProjectItem>Constellation Project UOB - Citibank (Project Team)</ProjectItem>
-      <ProjectItem>Union Bank Sri Lanka, DSP Digital Development (Project Team)</ProjectItem>
+      <ProjectItem2>Union Bank Sri Lanka, DSP Digital Development (Project Team)</ProjectItem2>
     </ProjectList>
   </Section>
 );

@@ -22,13 +22,13 @@ const NavbarLink = styled.nav`
 `;
 
 const Navbar = () => (
-    <NavbarContainer>
-        <Link href="/" passHref><NavbarLink>Home</NavbarLink></Link>
-        <Link href="/about" passHref><NavbarLink>About</NavbarLink></Link>
-        <Link href="/projects" passHref><NavbarLink>Projects</NavbarLink></Link>
-        <Link href="/skills" passHref><NavbarLink>Skills</NavbarLink></Link>
-        <Link href="/contact" passHref><NavbarLink>Contacts</NavbarLink></Link>
-    </NavbarContainer>
+  <NavbarContainer>
+    <Link href="/" passHref><NavbarLink>Home</NavbarLink></Link>
+    <Link href="/about" passHref><NavbarLink>About</NavbarLink></Link>
+    <Link href="/projects" passHref><NavbarLink>Projects</NavbarLink></Link>
+    <Link href="/skills" passHref><NavbarLink>Skills</NavbarLink></Link>
+    {/* <Link href="/contact" passHref><NavbarLink>Contacts</NavbarLink></Link> */}
+  </NavbarContainer>
 );
 
 export default Navbar;

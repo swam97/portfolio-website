@@ -9,7 +9,7 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: center;
   @media (max-width: 768px) {
     font-size: 2em;
@@ -62,8 +62,15 @@ export const ProjectList = styled.ul`
 `;
 
 export const ProjectItem = styled.li`
-  margin-bottom: 60px;
-  font-size: 1.6em;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
+`;
+export const ProjectItem2 = styled.li`
+  margin-bottom: 80px;
+  font-size: 1.4em;
   @media (max-width: 768px) {
     font-size: 1em;
   }
@@ -75,6 +82,23 @@ export const ProjectYear = styled.h2`
   @media (max-width: 768px) {
     font-size: 1.2em;
   }
+`;
+export const LinkWrapper = styled.a`
+  color: #0070f3; /* Customize your text color */
+  text-decoration: none; /* No underline by default */
+  font-size: 1.2rem; /* Adjust font size as needed */  
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
+  &:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+`;
+export const CenterWrapper = styled.div`
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  padding: 20px; /* Add padding if needed */
 `;
 
 // export const Section = styled.section`
@@ -89,7 +113,7 @@ export const ProfileImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding-top:150px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   img {
     border-radius: 50%;
@@ -156,17 +180,17 @@ export const SkillText = styled.h1`
   width: 100%; /* Make sure the width takes the whole container width */
 `;
 export const EduText = styled.h1`
-  margin-top: 50px;
-  font-size: 2.0rem;
+  margin-top: 30px;
+  font-size: 1.7rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: left; /* Left justify the text */
   width: 100%; /* Make sure the width takes the whole container width */
   text-decoration: underline;
 `;
 export const EduTitleText = styled.h1`
   margin-top: 30px;
-  font-size: 2.0rem;
+  font-size: 1.7rem;
   color: #333;
   margin-bottom: 20px;
   text-align: left; /* Left justify the text */
@@ -174,9 +198,18 @@ export const EduTitleText = styled.h1`
 `;
 export const PlaceText = styled.h1`
   margin-top: 1px;
-  font-size: 2.0rem;
+  font-size: 1.4rem;
   color: #333;
   margin-bottom: 20px;
+  text-align: left; /* Left justify the text */
+  width: 100%; /* Make sure the width takes the whole container width */
+  font-weight: normal;
+`;
+export const PlaceText2 = styled.h1`
+  margin-top: 1px;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 40px;
   text-align: left; /* Left justify the text */
   width: 100%; /* Make sure the width takes the whole container width */
   font-weight: normal;
