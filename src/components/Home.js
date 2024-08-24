@@ -7,7 +7,7 @@ import TypingEffect from '../components/TypingEffect';
 
 
 const Home = () => {
-    const [text, setText] = useState('Hi there, welcome to my portfolio page. Looking forward to work with you!');
+    const [text, setText] = useState('Welcome to my portfolio. I’m excited about the opportunity to contribute to your team and drive innovative solutions together');
     const [key, setKey] = useState(0);
     useEffect(() => {
         const interval = setInterval(() => {
