@@ -11,7 +11,7 @@ const Home = () => {
     const [key, setKey] = useState(0);
     useEffect(() => {
         const interval = setInterval(() => {
-            setText('Hi there, welcome to my portfolio page. Looking forward to work with you!');
+            setText("Welcome to my portfolio. I’m excited about the opportunity to contribute to your team and drive innovative solutions together");
             setKey(prevKey => prevKey + 1);
         }, 15000); // Repeat every 60 seconds (1 minute)
 
