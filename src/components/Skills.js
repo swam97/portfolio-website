@@ -9,9 +9,6 @@ const Skills = () => (
         <Text>
             Here are some of the skills I possess:
         </Text>
-        <br></br>
-        <br></br>
-
 
         <SkillContainer>
             <EduText>Technical Skills</EduText>

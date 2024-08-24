@@ -9,7 +9,7 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.2em;
+  font-size: 2.0em;
   text-align: center;
   @media (max-width: 768px) {
     font-size: 2em;
@@ -17,7 +17,7 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-  font-size: 1.4em;
+  font-size: 1.5em;
   text-align: center;
   @media (max-width: 768px) {
     font-size: 1em;
@@ -55,6 +55,7 @@ export const ImageContainer = styled.div`
 export const ProjectList = styled.ul`
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -112,7 +113,7 @@ export const ProfileImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top:150px;
+  padding-top:70px;
   margin-bottom: 40px;
 
   img {
@@ -181,7 +182,7 @@ export const SkillText = styled.h1`
 `;
 export const EduText = styled.h1`
   margin-top: 30px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #333;
   margin-bottom: 10px;
   text-align: left; /* Left justify the text */
@@ -190,7 +191,7 @@ export const EduText = styled.h1`
 `;
 export const EduTitleText = styled.h1`
   margin-top: 30px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #333;
   margin-bottom: 20px;
   text-align: left; /* Left justify the text */
@@ -198,7 +199,7 @@ export const EduTitleText = styled.h1`
 `;
 export const PlaceText = styled.h1`
   margin-top: 1px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #333;
   margin-bottom: 20px;
   text-align: left; /* Left justify the text */

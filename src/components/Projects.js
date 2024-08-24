@@ -67,7 +67,6 @@ const Projects = () => (
     <Title>My Projects</Title>
     <br></br>
     <Text>Here are some of the projects I have worked on:</Text>
-    <br></br><br></br>
     <ProjectList>
       <ProjectYear>2024 - Current</ProjectYear>
       <br></br>
